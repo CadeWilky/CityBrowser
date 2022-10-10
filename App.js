@@ -5,10 +5,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import * as WebBrowser from 'expo-web-browser';
 
 
-
 function ArtInstitute({}) {
   return (
-    <View styles={styles.container}>
+    <View style={styles.container}>
       <Image style={styles.imgSettings} source={require('./assets/art.png')} />
       <TouchableOpacity 
         onPress={ () => WebBrowser.openBrowserAsync('https://www.artic.edu/')}
@@ -22,7 +21,7 @@ function ArtInstitute({}) {
 
 function MagnificentMile({ }) {
   return (        
-    <View styles={styles.container}>      
+    <View style={styles.container}>      
       <Image style={styles.imgSettings} source={require('./assets/mile.png')} />
       <TouchableOpacity 
         onPress={ () => WebBrowser.openBrowserAsync('https://www.themagnificentmile.com/')}
@@ -49,7 +48,7 @@ function NavyPier({ }) {
 }
 function WaterTower({ }) {
   return (
-    <View styles={styles.container}>
+    <View style={styles.container}>
       <Image style={styles.imgSettings} source={require('./assets/water.png')} />
       <TouchableOpacity 
         onPress={ () => WebBrowser.openBrowserAsync('https://www.chicago.gov/city/en/depts/dca/supp_info/city_gallery_in_thehistoricwatertower.html')}
@@ -62,7 +61,7 @@ function WaterTower({ }) {
 }
 function WillisTower({ }) {
   return (
-    <View styles={styles.container}>
+    <View style={styles.container}>
       <Image style={styles.imgSettings} source={require('./assets/willis.png')} />
       <TouchableOpacity 
         onPress={ () => WebBrowser.openBrowserAsync('https://www.willistower.com/')}
